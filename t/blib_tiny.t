@@ -1,7 +1,13 @@
 use Test2::V0 -no_srand => 1;
-use blib::tiny;
 
-ok 1, 'todo';
+subtest 'compiles okay' => sub {
+
+  local $@ = '';
+  eval { require blib::tiny };
+  is "$@", '';
+
+};
+
 
 done_testing;
 
