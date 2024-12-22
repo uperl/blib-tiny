@@ -2,4 +2,7 @@ blib-tiny-*
 /.build/
 *.swp
 
-
+/blib-tiny-*
+/.build
+*.old
+*.orig
